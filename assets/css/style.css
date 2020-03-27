@@ -1,0 +1,263 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1.jpg") no-repeat center;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 8px 4px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 17px; 
+  border-radius: 2px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  opacity: .7;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.img-logo{
+  width: 60px;
+}
+
+.header a:hover, .header a.active {
+  opacity: 1;
+}
+
+.header-right {
+  float: right;
+}
+
+.caption {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+  color: #000;
+}
+
+h3.title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 25px "Open Sans", sans-serif;
+  color: rgb(236, 228, 228);
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 20px 10px;
+}
+
+
+.cap-container{
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #999;
+  border-radius: 3px;
+  box-shadow: 15px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  text-align: left;
+}
+
+.psw {
+  float: right;
+  padding: 16px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .caption{
+    top:30%;
+    left: 5%;
+    width: 90%;
+
+  }
+
+  .cap-container{
+    top: 80px;
+    width: 90%;
+    left: 5%;
+  }
+
+  h3.title{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .header a, .caption a {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #48C9B0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover{
+  background-color: #E74C3C;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 12px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.btn-outline{
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+.btn-success {background-color: #1ef4c6;} /* Green */
+.btn-success:hover {background-color: #76D7C4;}
+
+.btn-info {background-color: #2196F3;} /* Blue */
+.btn-info:hover {background: #0b7dda;}
+
+.btn-warning {background-color: #ff9800;} /* Orange */
+.btn-warning:hover {background: #e68a00;}
+
+.btn-danger {background-color: #f44336;} /* Red */
+.btn-danger:hover {background: #da190b;}
+
+.btn-default {background-color: #e7e7e7; color: black;} /* Gray */
+.btn-default:hover {background: #ddd;}
+
+/* Green */
+.btn-outline-success {border-color: #1ef4c6;color: #1ef4c6;}
+.btn-outline-success:hover {background-color: #1ef4c6;color: white;}
+
+/* Blue */
+.btn-outline-info {border-color: #2196F3;color: dodgerblue}
+.btn-outline-info:hover {background: #2196F3;color: white;}
+
+/* Orange */
+.btn-outline-warning {border-color: #ff9800;color: orange;}
+.btn-outline-warning:hover {background: #ff9800;color: white;}
+
+/* Red */
+.btn-outline-danger {border-color: #f44336;color: red}
+.btn-outline-danger:hover {background: #f44336;color: white;}
+
+/* Gray */
+.btn-outline-default {border-color: #e7e7e7;color: black;}
+.btn-outline-default:hover {background: #e7e7e7;}
+
+
