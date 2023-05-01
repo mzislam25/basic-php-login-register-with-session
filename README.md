@@ -10,11 +10,6 @@
 
 ## App Info
 
-### Author
-
-zAhir
-(http://www.krittimmanush.com)
-
 ### Version
 
 1.0.0
